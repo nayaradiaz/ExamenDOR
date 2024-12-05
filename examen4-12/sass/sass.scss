@@ -1,0 +1,57 @@
+/*VARIABLES*/
+$primer-color: #3498db;
+$segundo-color: #e74c3c;
+$tercer-color: #2ecc71;
+$primer-font: Arial, sans-serif;
+$segunda-font: Georgia, serif;
+$tercera-font: Courier New, monospace;
+
+/*MIXINS*/
+@mixin color($color: $primer-color, $tipoLetra: $primer-font) {
+    background: $color;
+    box-shadow: 0 0 1px rgba($color, .25);
+    font-family: $tipoLetra;
+    color: #fff;
+}
+
+/*PLACEHOLDER*/
+
+%caracteristicaBotones {
+    border-radius: 5px;
+    padding: 20px;
+    color: #ffffff;
+}
+
+/*NESTING*/
+body {
+    .centrar {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        gap: 25px;
+        button {
+            width: 150px;
+            @extend %caracteristicaBotones;
+
+        }
+
+        .uno {
+            @include color();
+        }
+
+        .dos {
+            @include color($color: $segundo-color, $tipoLetra: $segunda-font);
+        }
+
+        .tres {
+            @include color($color: $tercer-color, $tipoLetra: $tercera-font);
+
+        }
+    }
+
+
+
+
+}

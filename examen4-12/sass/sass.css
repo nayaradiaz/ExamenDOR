@@ -1,0 +1,38 @@
+/*VARIABLES*/
+/*MIXINS*/
+/*PLACEHOLDER*/
+body .centrar button {
+  border-radius: 5px;
+  padding: 20px;
+  color: #ffffff;
+}
+
+/*NESTING*/
+body .centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 25px;
+}
+body .centrar button {
+  width: 150px;
+}
+body .centrar .uno {
+  background: #3498db;
+  box-shadow: 0 0 1px rgba(52, 152, 219, 0.25);
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+body .centrar .dos {
+  background: #e74c3c;
+  box-shadow: 0 0 1px rgba(231, 76, 60, 0.25);
+  font-family: Georgia, serif;
+  color: #fff;
+}
+body .centrar .tres {
+  background: #2ecc71;
+  box-shadow: 0 0 1px rgba(46, 204, 113, 0.25);
+  font-family: Courier New, monospace;
+  color: #fff;
+}/*# sourceMappingURL=sass.css.map */
